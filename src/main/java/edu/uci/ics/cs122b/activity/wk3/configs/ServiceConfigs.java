@@ -1,6 +1,6 @@
-package edu.uci.ics.cs122b.activity.wk1.configs;
+package edu.uci.ics.cs122b.activity.wk3.configs;
 
-import edu.uci.ics.cs122b.activity.wk1.logger.ServiceLogger;
+import edu.uci.ics.cs122b.activity.wk3.logger.ServiceLogger;
 
 public class ServiceConfigs {
     public static final int MIN_SERVICE_PORT = 1024;

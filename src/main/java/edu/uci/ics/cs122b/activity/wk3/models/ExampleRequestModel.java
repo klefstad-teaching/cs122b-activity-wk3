@@ -1,4 +1,4 @@
-package edu.uci.ics.cs122b.activity.wk1.models;
+package edu.uci.ics.cs122b.activity.wk3.models;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,4 +1,4 @@
-package edu.uci.ics.cs122b.activity.wk1.logger;
+package edu.uci.ics.cs122b.activity.wk3.logger;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

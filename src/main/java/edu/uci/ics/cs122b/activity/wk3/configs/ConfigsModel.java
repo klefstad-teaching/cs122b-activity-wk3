@@ -1,4 +1,4 @@
-package edu.uci.ics.cs122b.activity.wk1.configs;
+package edu.uci.ics.cs122b.activity.wk3.configs;
 
 import java.util.Map;
 

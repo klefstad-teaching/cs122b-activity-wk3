@@ -1,10 +1,10 @@
-package edu.uci.ics.cs122b.activity.wk1.resources;
+package edu.uci.ics.cs122b.activity.wk3.resources;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.uci.ics.cs122b.activity.wk1.logger.ServiceLogger;
-import edu.uci.ics.cs122b.activity.wk1.models.ExampleRequestModel;
-import edu.uci.ics.cs122b.activity.wk1.models.ExampleResponseModel;
+import edu.uci.ics.cs122b.activity.wk3.logger.ServiceLogger;
+import edu.uci.ics.cs122b.activity.wk3.models.ExampleRequestModel;
+import edu.uci.ics.cs122b.activity.wk3.models.ExampleResponseModel;
 import org.glassfish.jersey.jackson.JacksonFeature;
 
 import javax.ws.rs.*;

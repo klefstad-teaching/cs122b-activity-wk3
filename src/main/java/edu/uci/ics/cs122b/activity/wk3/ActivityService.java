@@ -1,10 +1,10 @@
-package edu.uci.ics.cs122b.activity.wk1;
+package edu.uci.ics.cs122b.activity.wk3;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
-import edu.uci.ics.cs122b.activity.wk1.configs.ConfigsModel;
-import edu.uci.ics.cs122b.activity.wk1.configs.ServiceConfigs;
-import edu.uci.ics.cs122b.activity.wk1.logger.ServiceLogger;
+import edu.uci.ics.cs122b.activity.wk3.configs.ConfigsModel;
+import edu.uci.ics.cs122b.activity.wk3.configs.ServiceConfigs;
+import edu.uci.ics.cs122b.activity.wk3.logger.ServiceLogger;
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
 import org.glassfish.jersey.jackson.JacksonFeature;
@@ -17,7 +17,7 @@ import java.net.URI;
 
 public class ActivityService {
 
-    public static final String RESOURCE_PATH = "edu.uci.ics.cs122b.activity.wk1.resources";
+    public static final String RESOURCE_PATH = "edu.uci.ics.cs122b.activity.wk3.resources";
 
     public static ActivityService service;
     private static ServiceConfigs serviceConfigs;

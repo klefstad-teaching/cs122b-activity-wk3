@@ -1,11 +1,11 @@
-package edu.uci.ics.cs122b.activity.wk1.logger;
+package edu.uci.ics.cs122b.activity.wk3.logger;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.logging.*;
 
 // Sample Usage
-// import edu.uci.ics.cs122b.activity.wk1.logger.ServiceLogger;
+// import edu.uci.ics.cs122b.activity.wk3.logger.ServiceLogger;
 // ServiceLogger.LOGGER.config("Config Log Example");
 // ServiceLogger.LOGGER.info("Info Log Example");
 // ServiceLogger.LOGGER.warning("Warning Log Example");
