@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "e8063d58-6e4f-4bec-898e-f5dfe822b043",
+		"name": "Activity Week 4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "wk3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "session_id",
+						"value": "15b99dfdec7e615846abe541b535ab7fb5af17f263e577dfeb4ebd4618d043e9161f3f753afb972a12d775d31568010a77be008b883084b3afa663b11d1cf2cc",
+						"type": "text"
+					},
+					{
+						"key": "email",
+						"value": "peter@uci.edu",
+						"type": "text"
+					},
+					{
+						"key": "transaction_id",
+						"value": "0001",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:12345/api/wk3/example/get?x=-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"wk3",
+						"example",
+						"get"
+					],
+					"query": [
+						{
+							"key": "x",
+							"value": "-2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:12345/api/example/hello",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:12345/api/example/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"example",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:12345/api/example/hello Copy",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:12345/api/example/helloTwo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"example",
+						"helloTwo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"Session\",\r\n    \"plevel\": 4,\r\n    \"status\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:12345/api/example/new/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"example",
+						"new",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search user normal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"Session\",\r\n    \"level\": 4,\r\n    \"status\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:12345/api/example/normal/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"api",
+						"example",
+						"normal",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

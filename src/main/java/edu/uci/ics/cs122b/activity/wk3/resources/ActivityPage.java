@@ -23,16 +23,16 @@ public class ActivityPage {
     @Produces(MediaType.APPLICATION_JSON)
     // Example endpoint to communicate with another microservice
     // Also demonstrates use of headers and Query Parameters
-
     // Path to this endpoint will look something like: http://localhost:port/activity/example/get?x=100
+    // postman client -> wk3 service -> activity1
     public Response exampleRestCall(@Context HttpHeaders headers, @QueryParam("x") Integer x) {
 
         // Set the path of the endpoint we want to communicate with
-        String servicePath = "http://localhost:12345/othermicroservice";
-        String endpointPath = "/some/endpoint";
+        String servicePath = "http://localhost:2942/activity";
+        String endpointPath = "/example/post";
 
         // Declare models
-        ExampleRequestModel requestModel = new ExampleRequestModel(1, 2);
+        ExampleRequestModel requestModel = new ExampleRequestModel(x, 2);
         ExampleResponseModel responseModel = null;
 
         // Get header strings
@@ -52,7 +52,10 @@ public class ActivityPage {
 
         // Create an InvocationBuilder to create the HTTP request
         ServiceLogger.LOGGER.info("Starting invocation builder...");
-        Invocation.Builder invocationBuilder = webTarget.request(MediaType.APPLICATION_JSON);
+        Invocation.Builder invocationBuilder = webTarget.request(MediaType.APPLICATION_JSON)
+                .header("email", email)
+                .header("session_id", session_id)
+                .header("transaction_id", transaction_id);
 
         // Send the request and save it to a Response
         ServiceLogger.LOGGER.info("Sending request...");

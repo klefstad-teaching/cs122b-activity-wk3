@@ -1,0 +1,9 @@
+serviceConfig:
+  scheme: http://
+  hostName: 127.0.0.1
+  port: 12345
+  path: /api/wk3
+
+loggerConfig:
+  outputDir: ./logs/
+  outputFile: example.log
